@@ -10,7 +10,7 @@ But if you do know what you are doing, this is a good framework to get something
 It works by looking for any files in your gdrive that have the word 'osiris' in the name.
 For those files it tries to revert to the 2nd to last revision and rename the file to whatever the file was called in that 2nd to last revision. 
 
-This means any files that this script decides to act on will delete the last revision of whatever file it deems infected. If it gets this wrong it could very well delete valid date. This script is very dangerous to run if you don't understand what it is doing.
+This means any files that this script decides to act on will delete the last revision of whatever file it deems infected. If it gets this wrong it could very well delete valid data. This script is very DANGEROUS to run if you don't understand what it is doing.
 
 YOU MUST DO YOU DUE DILIGENCE before allowing this script to actually take these actions. 
 
