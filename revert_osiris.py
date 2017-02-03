@@ -26,6 +26,7 @@ except ImportError:
     flags = None
 
 SCOPES = 'https://www.googleapis.com/auth/drive'
+#YOU NEED TO SET UP AN APPLICATION ON GOOGLE AND GENERATE A KEY AND CREATE THIS FILE
 CLIENT_SECRET_FILE = 'revert_osiris.json'
 APPLICATION_NAME = 'Revert Osiris'
 
@@ -153,13 +154,14 @@ def main():
 
         print("{}: {} revisions found".format(target_rev_name, len(revisions['revisions'])) )
 
+        #THESE ARE THE REALLY DANGEROUS STEPS, ONLY UNCOMMMENT IF YOU KNOW WHAT YOU ARE DOING!!!
         rev_id_to_delete = revisions['revisions'][-1]['id']
         print("service.revisions().delete(fileId={}, revisionId={}).execute()".format(file_id, rev_id_to_delete))
-        del_rev = service.revisions().delete(fileId=file_id, revisionId=rev_id_to_delete).execute()
+        #del_rev = service.revisions().delete(fileId=file_id, revisionId=rev_id_to_delete).execute()
 
         update_body = { 'name': target_rev_name }
         print("service.files().update(fileId={}, body={}).execute()".format(file_id, update_body))
-        update_name = service.files().update(fileId=file_id, body=update_body).execute()
+        #update_name = service.files().update(fileId=file_id, body=update_body).execute()
 
 if __name__ == '__main__':
     main()
