@@ -12,7 +12,7 @@ For those files it tries to revert to the 2nd to last revision and rename the fi
 
 This means any files that this script decides to act on will delete the last revision of whatever file it deems infected. If it gets this wrong it could very well delete valid data. This script is very DANGEROUS to run if you don't understand what it is doing.
 
-YOU MUST DO YOU DUE DILIGENCE before allowing this script to actually take these actions. 
+YOU MUST DO YOUR DUE DILIGENCE before allowing this script to actually take these actions. 
 
 It makes some effort in backing up those files first to local disk but that might fail, but it still might continue and happily revert your perfectly good files without first downloading a backup. AGAIN, DO NOT RUN THIS UNLESS YOU KNOW WHAT YOU ARE DOING!!!
 
